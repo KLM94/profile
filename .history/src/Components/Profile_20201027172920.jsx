@@ -10,7 +10,7 @@ export default function Profile() {
 
       <Form />
 
-      {/* Removed into seperate component as the file got larger and untidy */}
+      {/* Possibly remove into seperate component as the file gets larger */}
       {/* Look into JSON file and extract information from there */}
     </main>
   );
