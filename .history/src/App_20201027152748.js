@@ -4,7 +4,7 @@ import Profile from './Components/Profile'
 function App() {
   return (
     <div className="App">
-      <Profile path="/" />
+      <Home path="/" />
     </div>
   );
 }

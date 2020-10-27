@@ -23,13 +23,7 @@ export default function HomePage() {
         <label>
           Date of Birth:
           <br />
-          <input type="text" name="date of birth" value="17/02/94" />
-        </label>
-        <br />
-        <label>
-          Favourite Activity:
-          <br />
-          <input type="text" name="favourite activity" value="Gaming" />
+          <input type="text" name="Date of Birth" value="17/02/94" />
         </label>
         <br />
       </form>

@@ -1,0 +1,9 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  font-size: 40px;
+  color: #ff6600;
+}

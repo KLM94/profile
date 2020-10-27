@@ -4,12 +4,10 @@ body {
 }
 
 .header {
-  text-align: center;
   font-size: 40px;
   color: #ff6600;
 }
 
 .profilePicture {
-  border: 5px solid rgba(66, 66, 66, 0.575);
-  box-shadow: 8px 8px #e8e9eb;
+  border: black;
 }
