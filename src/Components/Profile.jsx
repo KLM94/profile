@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import axios from "axios";
 import ProfilePicture from "../Images/profilepic.png";
 import Form from "../Components/Form";
 import { data } from "../data/data.json";
@@ -7,6 +8,17 @@ const { friends, loginHistory } = data;
 
 class Profile extends Component {
   /* Changed to Class component because will be using state  -- consider extracting into seperate component*/
+  state = {
+    colours: [],
+  };
+
+  componentDidMount() {
+    axios.get(`http://api.noopschallenge.com/hexbot`).then((response) => {
+      const colours = response.colors;
+      this.setState({ colours });
+      console.log(response.data.colors[0]);
+    });
+  }
 
   render() {
     return (

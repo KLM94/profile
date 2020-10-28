@@ -1,7 +1,7 @@
 export default function Form() {
   return (
-    <form>
-      <label>
+    <form className="form">
+      <label className="form-contents">
         First name:
         <br />
         <input type="text" name="first name" value="Kirsty" readOnly />

@@ -1,15 +1,47 @@
 body {
   display: flex;
   justify-content: center;
+  background-color: #ce7e49;
 }
 
 .header {
   text-align: center;
   font-size: 40px;
-  color: #ff6600;
+  color: #000000;
 }
 
 .profilePicture {
-  border: 5px solid rgba(66, 66, 66, 0.575);
-  box-shadow: 8px 8px #e8e9eb;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border: 5px solid rgba(32, 32, 32, 0.575);
+  margin-bottom: 2em;
+}
+
+.form {
+  width: 200px;
+  padding: 20px;
+}
+
+input[type="text"] {
+  font-family: "Times New Roman", Times, serif;
+  font-size: inherit;
+  padding: 0.4em;
+  margin: 0.5em 0;
+  width: 100%;
+  border-radius: 10px;
+  border: 0;
+  box-shadow: 0 0 10px 4px rgba(63, 62, 62, 0.521);
+  opacity: 0.9;
+  transition: 0.4s;
+}
+
+input[type="text"]:hover {
+  opacity: 0.7;
+}
+
+label {
+  font: 1em "typewriter", sans-serif;
+  font-weight: 550;
 }
