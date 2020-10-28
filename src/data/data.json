@@ -1,16 +1,16 @@
 {
   "data": {
-    "friendsList": [
-      "Steve Rogers",
-      "Bruce Banner",
-      "Peter Parker",
-      "Bruce Wayne",
-      "Tony Stark"
+    "friends": [
+      { "name": "Steve Rogers", "id": "1" },
+      { "name": "Bruce Banner", "id": "2" },
+      { "name": "Peter Parker", "id": "3" },
+      { "name": "Bruce Wayne", "id": "4" },
+      { "name": "Tony Stark", "id": "5" }
     ],
     "loginHistory": [
-      "Mon 26 Oct 2020 14:44pm",
-      "Sun 25 Oct 2020 12:22pm",
-      "Thurs 22 Oct 20:03pm"
+      { "date": "Mon 26 Oct 2020 14:44pm", "id": "1" },
+      { "date": "Sun 25 Oct 2020 12:22pm", "id": "2" },
+      { "date": "Thurs 22 Oct 20:03pm", "id": "3" }
     ]
   }
 }

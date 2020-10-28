@@ -3,7 +3,7 @@ import ProfilePicture from "../Images/profilepic.png";
 import Form from "../Components/Form";
 import { data } from "../data/data.json";
 
-const { friendsList, loginHistory } = data;
+const { friends, loginHistory } = data;
 
 class Profile extends Component {
   /* Changed to Class component because will be using state  -- consider extracting into seperate component*/
@@ -18,10 +18,17 @@ class Profile extends Component {
 
         <Form />
 
-        <p>Friends List:</p>
+        <h4>Friends List:</h4>
         <ul>
-          {friendsList.map((fl) => (
-            <li>{fl}</li>
+          {friends.map((friend) => (
+            <li key={friend.id}>{friend.name}</li>
+          ))}
+        </ul>
+
+        <h4>Login History:</h4>
+        <ul key={loginHistory}>
+          {loginHistory.map((login) => (
+            <li key={login.id}>{login.date}</li>
           ))}
         </ul>
 
