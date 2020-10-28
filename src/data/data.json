@@ -1,0 +1,16 @@
+{
+  "data": {
+    "friendsList": [
+      "Steve Rogers",
+      "Bruce Banner",
+      "Peter Parker",
+      "Bruce Wayne",
+      "Tony Stark"
+    ],
+    "loginHistory": [
+      "Mon 26 Oct 2020 14:44pm",
+      "Sun 25 Oct 2020 12:22pm",
+      "Thurs 22 Oct 20:03pm"
+    ]
+  }
+}
