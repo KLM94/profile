@@ -1,21 +1,27 @@
-body {
-  display: flex;
-  justify-content: center;
-  background-color: #ce7e49;
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+
+/* .container {
+
+} */
+
+* {
+  outline: 1px solid red;
 }
 
 .header {
+  font-family: "Oswald", sans-serif;
   text-align: center;
-  font-size: 40px;
+  font-size: 60px;
   color: #000000;
+  margin-top: 0;
 }
 
 .profilePicture {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
-  border: 5px solid rgba(32, 32, 32, 0.575);
+  width: 10%;
+  border: 5px solid rgba(0, 0, 0, 0.664);
   margin-bottom: 2em;
 }
 
@@ -42,6 +48,13 @@ input[type="text"]:hover {
 }
 
 label {
-  font: 1em "typewriter", sans-serif;
-  font-weight: 550;
+  font-family: "Oswald", sans-serif;
+  font-size: 19px;
+  font-weight: 580;
+}
+
+.set-background-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

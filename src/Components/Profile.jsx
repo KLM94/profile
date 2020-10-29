@@ -9,26 +9,35 @@ const { friends, loginHistory } = data;
 class Profile extends Component {
   /* Changed to Class component because will be using state  -- consider extracting into seperate component*/
   state = {
-    colours: [],
+    favouriteColour: "#ce7e49",
   };
 
-  componentDidMount() {
-    axios.get(`http://api.noopschallenge.com/hexbot`).then((response) => {
-      const colours = response.colors;
-      this.setState({ colours });
-      console.log(response.data.colors[0]);
-    });
-  }
+  setBackgroundColour = () => {
+    return axios
+      .get(`http://api.noopschallenge.com/hexbot`)
+      .then((response) => {
+        // console.log(response.data.colors[0].value);
+        this.setState({ favouriteColour: response.data.colors[0].value });
+        // console.log(this.state.favouriteColour);
+      });
+  };
 
   render() {
     return (
-      <main>
+      <div
+        style={{
+          backgroundColor: this.state.favouriteColour,
+        }}
+      >
         <h1 className="header">My Profile</h1>
 
         <img className="profilePicture" src={ProfilePicture} alt="Profile" />
         {/* Profile picture maybe needs adding to JSON file and extracted from there. */}
 
         <Form />
+        <div className="set-background-btn">
+          <button onClick={this.setBackgroundColour}>Change background</button>
+        </div>
 
         <h4>Friends List:</h4>
         <ul>
@@ -46,7 +55,7 @@ class Profile extends Component {
 
         {/* Removed Form into seperate component as file got larger and untidy. */}
         {/* Look into JSON file and extract information from there. */}
-      </main>
+      </div>
     );
   }
 }

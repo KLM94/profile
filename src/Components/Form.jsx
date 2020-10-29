@@ -2,13 +2,13 @@ export default function Form() {
   return (
     <form className="form">
       <label className="form-contents">
-        First name:
+        First Name:
         <br />
         <input type="text" name="first name" value="Kirsty" readOnly />
       </label>
       <br />
       <label>
-        Last name:
+        Last Name:
         <br />
         <input type="text" name="last name" value="McGlynn" readOnly />
       </label>
