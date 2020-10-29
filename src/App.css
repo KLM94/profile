@@ -1,4 +1,20 @@
-@import url("https://fonts.googleapis.com/css?family=Oswald");
+/* @import url("https://fonts.googleapis.com/css?family=Oswald"); */
+
+.profile {
+  position: relative;
+  height: 100%;
+}
+
+.login-history {
+  position: absolute;
+  padding-left: 1%;
+}
+
+.friends {
+  position: absolute;
+  width: 99%;
+  direction: rtl;
+}
 
 .header {
   font-family: "Oswald", sans-serif;
@@ -22,18 +38,24 @@
   justify-content: center;
 }
 
-.form-container,
+.set-background-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .form-container,
 .form-fl {
   margin: 0;
   display: flex;
   justify-content: center;
   flex: 1;
-}
+} */
 
-.form {
+/* .form {
   width: 200px;
   padding: 20px;
-}
+} */
 
 input[type="text"] {
   font-family: "Times New Roman", Times, serif;
@@ -57,17 +79,11 @@ label {
   font-weight: 580;
 }
 
-.friends-list-container,
-.friends-list {
+/* .friends-list-container, */
+/* .friends-list {
   display: flex;
   text-align: right;
   list-style-type: none;
   margin-right: 0.5em;
   flex-direction: column;
-}
-
-.set-background-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+} */ ;

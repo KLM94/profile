@@ -27,38 +27,45 @@ class Profile extends Component {
   render() {
     return (
       <div
+        className="profile"
         style={{
           backgroundColor: this.state.favouriteColour,
         }}
       >
+        <div className="login-history">
+          <h4>Login History:</h4>
+          <ul key={loginHistory}>
+            {loginHistory.map((login) => (
+              <li key={login.id}>{login.date}</li>
+            ))}
+          </ul>
+        </div>
+        <div className="friends">
+          <h4>Friends List</h4>
+          <ul>
+            {friends.map((friend) => (
+              <li key={friend.id}>{friend.name}</li>
+            ))}
+          </ul>
+        </div>
         <h1 className="header">My Profile</h1>
 
         <img className="profilePicture" src={ProfilePicture} alt="Profile" />
         <span className="form-fl">
           <Form />
-
-          <div className="friends-list-container">
-            <h4 className="friends-list-title">Friends List:</h4>
-            <ul>
-              {friends.map((friend) => (
-                <li className="friends-list" key={friend.id}>
-                  {friend.name}
-                </li>
-              ))}
-            </ul>
-          </div>
         </span>
+        <div className="friends-list-container"></div>
 
         <div className="set-background-btn">
-          <button onClick={this.setBackgroundColour}>Change background</button>
+          <button onClick={this.setBackgroundColour}>Change Background</button>
         </div>
 
-        <h4>Login History:</h4>
+        {/* <h4>Login History:</h4>
         <ul key={loginHistory}>
           {loginHistory.map((login) => (
             <li key={login.id}>{login.date}</li>
           ))}
-        </ul>
+        </ul> */}
 
         {/* Removed Form into seperate component as file got larger and untidy. */}
         {/* Look into JSON file and extract information from there. */}
