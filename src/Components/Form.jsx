@@ -1,30 +1,37 @@
 export default function Form() {
   return (
-    <form className="form">
-      <label className="form-contents">
-        First Name:
+    <span className="form-container">
+      <form className="form">
+        <label className="form-contents">
+          First Name:
+          <br />
+          <input type="text" name="first name" value="Kirsty" readOnly />
+        </label>
         <br />
-        <input type="text" name="first name" value="Kirsty" readOnly />
-      </label>
-      <br />
-      <label>
-        Last Name:
+        <label>
+          Last Name:
+          <br />
+          <input type="text" name="last name" value="McGlynn" readOnly />
+        </label>
         <br />
-        <input type="text" name="last name" value="McGlynn" readOnly />
-      </label>
-      <br />
-      <label>
-        Date of Birth:
+        <label>
+          Date of Birth:
+          <br />
+          <input type="text" name="date of birth" value="17/02/94" readOnly />
+        </label>
         <br />
-        <input type="text" name="date of birth" value="17/02/94" readOnly />
-      </label>
-      <br />
-      <label>
-        Favourite Activity:
+        <label>
+          Favourite Activity:
+          <br />
+          <input
+            type="text"
+            name="favourite activity"
+            value="Gaming"
+            readOnly
+          />
+        </label>
         <br />
-        <input type="text" name="favourite activity" value="Gaming" readOnly />
-      </label>
-      <br />
-    </form>
+      </form>
+    </span>
   );
 }

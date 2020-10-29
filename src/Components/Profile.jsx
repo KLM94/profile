@@ -16,6 +16,8 @@ class Profile extends Component {
     return axios
       .get(`http://api.noopschallenge.com/hexbot`)
       .then((response) => {
+        //console.log(response.data)
+        //console.log(response.data.colors)
         // console.log(response.data.colors[0].value);
         this.setState({ favouriteColour: response.data.colors[0].value });
         // console.log(this.state.favouriteColour);
@@ -32,19 +34,24 @@ class Profile extends Component {
         <h1 className="header">My Profile</h1>
 
         <img className="profilePicture" src={ProfilePicture} alt="Profile" />
-        {/* Profile picture maybe needs adding to JSON file and extracted from there. */}
+        <span className="form-fl">
+          <Form />
 
-        <Form />
+          <div className="friends-list-container">
+            <h4 className="friends-list-title">Friends List:</h4>
+            <ul>
+              {friends.map((friend) => (
+                <li className="friends-list" key={friend.id}>
+                  {friend.name}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </span>
+
         <div className="set-background-btn">
           <button onClick={this.setBackgroundColour}>Change background</button>
         </div>
-
-        <h4>Friends List:</h4>
-        <ul>
-          {friends.map((friend) => (
-            <li key={friend.id}>{friend.name}</li>
-          ))}
-        </ul>
 
         <h4>Login History:</h4>
         <ul key={loginHistory}>

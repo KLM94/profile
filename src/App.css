@@ -1,13 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald");
 
-/* .container {
-
-} */
-
-* {
-  outline: 1px solid red;
-}
-
 .header {
   font-family: "Oswald", sans-serif;
   text-align: center;
@@ -23,6 +15,19 @@
   width: 10%;
   border: 5px solid rgba(0, 0, 0, 0.664);
   margin-bottom: 2em;
+}
+
+.form-fl {
+  display: flex;
+  justify-content: center;
+}
+
+.form-container,
+.form-fl {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex: 1;
 }
 
 .form {
@@ -48,9 +53,17 @@ input[type="text"]:hover {
 }
 
 label {
-  font-family: "Oswald", sans-serif;
   font-size: 19px;
   font-weight: 580;
+}
+
+.friends-list-container,
+.friends-list {
+  display: flex;
+  text-align: right;
+  list-style-type: none;
+  margin-right: 0.5em;
+  flex-direction: column;
 }
 
 .set-background-btn {
