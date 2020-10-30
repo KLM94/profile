@@ -5,14 +5,16 @@ import Form from "../Components/Form";
 import { data } from "../data/data.json";
 
 const { friends, loginHistory } = data;
+// Keys extracted from JSON file
 
 class Profile extends Component {
-  /* Changed to Class component because will be using state  -- consider extracting into seperate component*/
+  /* Function changed to class component because of state */
   state = {
     favouriteColour: "#ce7e49",
   };
 
   setBackgroundColour = () => {
+    // Function to call noops API
     return axios
       .get(`http://api.noopschallenge.com/hexbot`)
       .then((response) => {
@@ -22,6 +24,7 @@ class Profile extends Component {
         this.setState({ favouriteColour: response.data.colors[0].value });
         // console.log(this.state.favouriteColour);
       });
+    /* When clicking the button on the profile page, each response is giving a random colour */
   };
 
   render() {
@@ -32,6 +35,8 @@ class Profile extends Component {
           backgroundColor: this.state.favouriteColour,
         }}
       >
+        {/* Inline styling that sets background colour to the state which calls the function */}
+
         <div className="login-history">
           <h4>Login History:</h4>
           <ul key={loginHistory}>
@@ -48,27 +53,24 @@ class Profile extends Component {
             ))}
           </ul>
         </div>
-        <h1 className="header">My Profile</h1>
+        {/* - Considered extracting friends list into a seperate component, because the data is lightweight, 
+        I decided to keep it here */}
+        {/* - Data extracted from JSON file */}
 
+        <h1 className="header">My Profile</h1>
         <img className="profilePicture" src={ProfilePicture} alt="Profile" />
         <span className="form-fl">
           <Form />
         </span>
         <div className="friends-list-container"></div>
-
         <div className="set-background-btn">
-          <button onClick={this.setBackgroundColour}>Change Background</button>
+          <button onClick={this.setBackgroundColour}>
+            Click here to change the background colour!
+          </button>
+          {/* onClick invoking function to make the request to the API when the button is clicked */}
         </div>
 
-        {/* <h4>Login History:</h4>
-        <ul key={loginHistory}>
-          {loginHistory.map((login) => (
-            <li key={login.id}>{login.date}</li>
-          ))}
-        </ul> */}
-
         {/* Removed Form into seperate component as file got larger and untidy. */}
-        {/* Look into JSON file and extract information from there. */}
       </div>
     );
   }

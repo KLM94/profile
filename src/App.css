@@ -1,8 +1,14 @@
-/* @import url("https://fonts.googleapis.com/css?family=Oswald"); */
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+body {
+  margin: 0;
+  padding: 0;
+}
 
 .profile {
+  font-family: "Roboto", sans-serif;
   position: relative;
-  height: 100%;
+  padding-bottom: 13.3%;
 }
 
 .login-history {
@@ -17,11 +23,11 @@
 }
 
 .header {
-  font-family: "Oswald", sans-serif;
   text-align: center;
-  font-size: 60px;
+  font-size: 50px;
   color: #000000;
   margin-top: 0;
+  text-shadow: 2px 3px #0202023d;
 }
 
 .profilePicture {
@@ -39,27 +45,13 @@
 }
 
 .set-background-btn {
+  padding: 2em;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
-/* .form-container,
-.form-fl {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  flex: 1;
-} */
-
-/* .form {
-  width: 200px;
-  padding: 20px;
-} */
-
 input[type="text"] {
-  font-family: "Times New Roman", Times, serif;
-  font-size: inherit;
+  font-size: 15px;
   padding: 0.4em;
   margin: 0.5em 0;
   width: 100%;
@@ -71,19 +63,10 @@ input[type="text"] {
 }
 
 input[type="text"]:hover {
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 label {
-  font-size: 19px;
+  font-size: 16px;
   font-weight: 580;
 }
-
-/* .friends-list-container, */
-/* .friends-list {
-  display: flex;
-  text-align: right;
-  list-style-type: none;
-  margin-right: 0.5em;
-  flex-direction: column;
-} */ ;

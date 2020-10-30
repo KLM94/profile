@@ -1,16 +1,26 @@
 {
   "data": {
     "friends": [
-      { "name": "Steve Rogers", "id": "1" },
-      { "name": "Bruce Banner", "id": "2" },
-      { "name": "Peter Parker", "id": "3" },
-      { "name": "Bruce Wayne", "id": "4" },
-      { "name": "Tony Stark", "id": "5" }
+      { "id": "1", "name": "Steve Rogers" },
+      { "id": "2", "name": "Bruce Banner" },
+      { "id": "3", "name": "Peter Parker" },
+      { "id": "4", "name": "Bruce Wayne" },
+      { "id": "5", "name": "Tony Stark" },
+      { "id": "6", "name": "Ana Amari" },
+      { "id": "7", "name": "Brigitte Lindholm" },
+      { "id": "8", "name": "Hana Song" },
+      { "id": "9", "name": "Genji Shimada" },
+      { "id": "10", "name": "Angela Ziegler" },
+      { "id": "11", "name": "Moira O’Deorain" },
+      { "id": "12", "name": "Jack Morrison" }
     ],
     "loginHistory": [
-      { "date": "Mon 26 Oct 2020 14:44pm", "id": "1" },
-      { "date": "Sun 25 Oct 2020 12:22pm", "id": "2" },
-      { "date": "Thurs 22 Oct 20:03pm", "id": "3" }
+      { "id": "1", "date": "Mon 26 Oct 2020 14:44pm" },
+      { "id": "2", "date": "Sun 25 Oct 2020 12:22pm" },
+      { "id": "3", "date": "Thurs 22 Oct 20:03pm" },
+      { "id": "4", "date": "Thurs 22 Oct 2020 10:44am" },
+      { "id": "5", "date": "Tue 20 Oct 2020 11:31am" },
+      { "id": "6", "date": "Mon 19 Oct 12:56pm" }
     ]
   }
 }

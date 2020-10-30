@@ -1,7 +1,10 @@
 export default function Form() {
+  // Function as data is static
+  // readOnly property added to form inputs after research due to an error in the console
+
   return (
-    <span className="form-container">
-      <form className="form">
+    <span>
+      <form>
         <label className="form-contents">
           First Name:
           <br />
