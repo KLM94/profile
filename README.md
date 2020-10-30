@@ -4,7 +4,7 @@ Profile page.
 
 # Description
 
-A profile page that displays personal information, profile picture, friends list, and login history. The user has the option to change the colour of the background by the click of a button using the noops API, which can be found [here](https://github.com/noops-challenge/hexbot).
+A profile page built with React, JSX, HTML5 and CSS that displays personal information, profile picture, friends list, and login history. The user has the option to change the colour of the background by the click of a button using the noops API, which can be found [here](https://github.com/noops-challenge/hexbot).
 
 # Installation
 
