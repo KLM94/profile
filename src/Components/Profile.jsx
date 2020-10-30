@@ -2,9 +2,10 @@ import React, { Component } from "react";
 import axios from "axios";
 import ProfilePicture from "../Images/profilepic.png";
 import Form from "../Components/Form";
+import LoginHistory from "./LoginHistory";
 import { data } from "../data/data.json";
 
-const { friends, loginHistory } = data;
+const { friends } = data;
 // Keys extracted from JSON file
 
 class Profile extends Component {
@@ -37,17 +38,11 @@ class Profile extends Component {
       >
         {/* Inline styling that sets background colour to the state which calls the function */}
 
-        <div className="login-history">
-          <h4>Login History:</h4>
-          <ul key={loginHistory}>
-            {loginHistory.map((login) => (
-              <li key={login.id}>{login.date}</li>
-            ))}
-          </ul>
-        </div>
+        <LoginHistory />
+
         <div className="friends">
           <h4>Friends List</h4>
-          <ul>
+          <ul className="friend-li">
             {friends.map((friend) => (
               <li key={friend.id}>{friend.name}</li>
             ))}
@@ -58,11 +53,12 @@ class Profile extends Component {
         {/* - Data extracted from JSON file */}
 
         <h1 className="header">My Profile</h1>
+
         <img className="profilePicture" src={ProfilePicture} alt="Profile" />
-        <span className="form-fl">
-          <Form />
-        </span>
-        <div className="friends-list-container"></div>
+        {/* Import picture from Images file*/}
+
+        <Form />
+
         <div className="set-background-btn">
           <button onClick={this.setBackgroundColour}>
             Click here to change the background colour!

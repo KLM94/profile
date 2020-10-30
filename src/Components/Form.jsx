@@ -3,7 +3,7 @@ export default function Form() {
   // readOnly property added to form inputs after research due to an error in the console
 
   return (
-    <span>
+    <span className="form-container">
       <form>
         <label className="form-contents">
           First Name:
