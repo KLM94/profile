@@ -12,7 +12,10 @@
       { "id": "9", "name": "Genji Shimada" },
       { "id": "10", "name": "Angela Ziegler" },
       { "id": "11", "name": "Moira O’Deorain" },
-      { "id": "12", "name": "Jack Morrison" }
+      { "id": "12", "name": "Jack Morrison" },
+      { "id": "13", "name": "Jean-Baptiste Augustin" },
+      { "id": "14", "name": "Akande Ogundimu" },
+      { "id": "15", "name": "Hanzo Shimada" }
     ],
     "loginHistory": [
       { "id": "1", "date": "Mon 26 Oct 2020 14:44pm" },
@@ -20,7 +23,11 @@
       { "id": "3", "date": "Thurs 22 Oct 20:03pm" },
       { "id": "4", "date": "Thurs 22 Oct 2020 10:44am" },
       { "id": "5", "date": "Tue 20 Oct 2020 11:31am" },
-      { "id": "6", "date": "Mon 19 Oct 12:56pm" }
+      { "id": "6", "date": "Mon 19 Oct 12:56pm" },
+      { "id": "7", "date": "Sun 18 Oct 15:26pm" },
+      { "id": "8", "date": "Fri 16 Oct 10:56am" },
+      { "id": "9", "date": "Thurs 15 Oct 12:16pm" },
+      { "id": "10", "date": "Wed 14 Oct 08:44am" }
     ]
   }
 }

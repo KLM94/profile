@@ -6,7 +6,7 @@ import LoginHistory from "./LoginHistory";
 import { data } from "../data/data.json";
 
 const { friends } = data;
-// Keys extracted from JSON file
+// Key extracted from JSON file
 
 class Profile extends Component {
   /* Function changed to class component because of state */
@@ -37,36 +37,39 @@ class Profile extends Component {
         }}
       >
         {/* Inline styling that sets background colour to the state which calls the function */}
-
         <LoginHistory />
 
-        <div className="friends">
-          <h4>Friends List</h4>
-          <ul className="friend-li">
+        <div>
+          <h1 className="header">My Profile</h1>
+
+          <img className="profilePicture" src={ProfilePicture} alt="Profile" />
+          {/* Import picture from Images file*/}
+          <Form />
+          <div className="set-background-btn">
+            <button onClick={this.setBackgroundColour}>
+              Click here to change the background colour!
+            </button>
+            {/* onClick invoking function to make the request to the API when the button is clicked */}
+
+            {/* Removed Form into seperate component as file got larger and untidy. */}
+          </div>
+        </div>
+
+        <div>
+          <p className="friends-list-header">
+            <strong>Friends List</strong>
+          </p>
+          <ul>
             {friends.map((friend) => (
-              <li key={friend.id}>{friend.name}</li>
+              <li className="friend-li" key={friend.id}>
+                {friend.name}
+              </li>
             ))}
           </ul>
         </div>
         {/* - Considered extracting friends list into a seperate component, because the data is lightweight, 
         I decided to keep it here */}
         {/* - Data extracted from JSON file */}
-
-        <h1 className="header">My Profile</h1>
-
-        <img className="profilePicture" src={ProfilePicture} alt="Profile" />
-        {/* Import picture from Images file*/}
-
-        <Form />
-
-        <div className="set-background-btn">
-          <button onClick={this.setBackgroundColour}>
-            Click here to change the background colour!
-          </button>
-          {/* onClick invoking function to make the request to the API when the button is clicked */}
-        </div>
-
-        {/* Removed Form into seperate component as file got larger and untidy. */}
       </div>
     );
   }

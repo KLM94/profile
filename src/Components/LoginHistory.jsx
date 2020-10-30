@@ -18,20 +18,18 @@ class LoginHistory extends Component {
   render() {
     return (
       <div>
-        <div className="login-history-contents">
-          <button className="login-history-btn" onClick={this.toggleHistory}>
-            View login history
-          </button>
-          {this.state.showHistory && (
-            /* if showHistory is true, it will excecute the following: */
-            <ul className="history-li">
-              {loginHistory.map((login) => (
-                <li key={login.id}>{login.date}</li>
-              ))}
-            </ul>
-            /* Map through each login history and list each one */
-          )}
-        </div>
+        <button className="login-history-btn" onClick={this.toggleHistory}>
+          View login history
+        </button>
+        {this.state.showHistory && (
+          /* if showHistory is true, it will excecute the following: */
+          <ul className="history-li">
+            {loginHistory.map((login) => (
+              <li key={login.id}>{login.date}</li>
+            ))}
+          </ul>
+          /* Map through each login history and list each one */
+        )}
       </div>
     );
   }
